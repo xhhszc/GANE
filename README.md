@@ -26,20 +26,20 @@ multiprocessing
 
 # Usage
 There are four files:
-- `utils.py`: Utile functions for data preparing and evaluation;
+- `utils.py`: Utile functions for data preparing;
 - `dis_model.py`: The discriminator of GANE;
 - `gen_model.py`: The generator of GANE;
 - `gane.py`: The trainer to minimax our discriminator and generator.
 
 ## How to run
 ```shell
-python gane.py --emb_dim 128 --epochs=150 --init_lr_gen 1e-5 --init_lr_dis 1e-5
+python gane.py --emb_dim 128 --epochs=150 --suffix 128d --init_lr_gen 1e-5 --init_lr_dis 1e-5
 ```
 
 
 
 ## Note
-- The output files (learned embeddings) will be stored in the `-output ` directory during training process.
+- The output files (learned embeddings) will be stored in the `output-suffix` directory during training process, if ``--suffix suffix``.
 
 
 
